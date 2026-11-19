@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "MakerWorld ランキング＆フィルタ",
+  "version": "1.0.0",
+  "description": "MakerWorld の全モデルをいいね数などで並べ替え・絞り込みします。",
+  "permissions": ["storage"],
+  "content_scripts": [
+    {
+      "matches": ["https://makerworld.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "icons": { "128": "icon128.png" }
+}
